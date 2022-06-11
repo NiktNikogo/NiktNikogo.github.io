@@ -1,0 +1,56 @@
+
+.pl {
+    color: red;
+}
+
+.eng {
+    color: blue;
+}
+
+.check {
+    position: relative;
+    width: 50px;
+}
+.check:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: grey;
+    border-radius: 15px;
+}
+.check:checked::before {
+    background-color: rgb(0, 183, 255);
+}
+.check::after {
+    content: '';
+    left: 0px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: blue;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.check:checked:after {
+    left: 25px;
+}
+.container {
+    position: relative;
+}
+
+.container .content {
+    display: none;
+}
+
+.container .content.contentPL {
+    display: block;
+
+}
+
+.check:checked ~ .content.contentPL{
+    display: none;
+}
+.check:checked ~ .content.contentENG {
+    display: block;
+}

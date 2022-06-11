@@ -2,6 +2,10 @@ tohtml.py
 addArcanas.py
 readme.md
 ideal.html
+ideal.css
 articles/
 arcana_images/
 .vscode/
+/my_extension
+test.md
+testExtensions.py

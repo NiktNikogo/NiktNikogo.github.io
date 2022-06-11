@@ -5,6 +5,7 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <link href="assets\styles.css" rel="stylesheet"/>
+  <link href="assets\langauge_toggle.css" rel="stylesheet"/>
   <link href="assets\favicon.ico" rel="icon" type="image/x-icon"/>
   <meta content="website" property="og:type"/>
   <meta content="#aabb77" name="theme-color"/>
@@ -66,21 +67,33 @@
      </li>
     </ul>
    </nav>
-   <article>
+   <article class="container">
+    <span class="pl">
+     PL
+    </span>
+    <input class="check" type="checkbox"/>
+    <span class="eng">
+     ENG
+    </span>
     <h1>
      I'm a dumbass
     </h1>
-    <p>
-     <picture>
-      <source srcset="assets/aboutme/git.webp" type="image/webp"/>
-      <img alt="kotek" src="assets/aboutme/git.png"/>
-     </picture>
-     <br/>
-     <picture>
-      <source srcset="assets/aboutme/gitBetter.webp" type="image/webp"/>
-      <img alt="kotekBetter" src="assets/aboutme/gitBetter.png"/>
-     </picture>
-    </p>
+    <div class="content contentPL">
+     <p>
+      <picture>
+       <source srcset="assets/aboutme/git.webp" type="image/webp"/>
+       <img alt="--kotek" src="assets/aboutme/git.png"/>
+      </picture>
+     </p>
+    </div>
+    <div class="content contentENG">
+     <p>
+      <picture>
+       <source srcset="assets/aboutme/gitBetter.webp" type="image/webp"/>
+       <img alt="--kotekBetter" src="assets/aboutme/gitBetter.png"/>
+      </picture>
+     </p>
+    </div>
    </article>
    <footer>
     <p>

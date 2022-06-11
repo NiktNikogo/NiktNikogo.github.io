@@ -67,8 +67,10 @@ header {
 nav {
     grid-column: span 2;
     padding: 30px;
-    border-bottom: 1px solid lightgray;
     text-align: center;
+    grid-column: span 2;
+    border-right: 0;
+    border-bottom: 1px solid #ff11fa;
 }
 nav li{
     display: inline-block;
@@ -103,20 +105,7 @@ footer {
 }
 
 /* responsive */
-@media screen and (max-width: 1200px) {
-    nav {
-        grid-column: span 2;
-        border-right: 0;
-        border-bottom: 1px solid #ff11fa;
-    }  
-    nav li {
-        display: inline-block;
-        margin-right: 10px;
-    }
-    article {
-        grid-column: span 2;
-    }
-}
+
 @media screen and (max-width: 900px) {
     nav, article, aside {
         grid-column: span 2;
