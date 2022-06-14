@@ -1,0 +1,30 @@
+.left_img {
+    display: block;
+    float: left;
+}
+.center_img {
+    display: block;
+    margin: 0px auto;
+}
+.right_img {
+    display: block;
+    float: right;
+}
+
+.big_img {
+    object-fit: cover;
+    height: calc(40vh);
+    width: auto;
+}
+
+.medium_img {
+    object-fit: cover;
+    height: calc(25vh);
+    width: auto;
+}
+
+.small_img {
+    object-fit: cover;
+    height: calc(15vh);
+    width: auto;
+}
