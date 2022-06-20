@@ -1,4 +1,3 @@
-
 .pl {
     color: red;
 }
@@ -7,11 +6,19 @@
     color: blue;
 }
 
-.check {
+#lang_toggle {
     position: relative;
     width: 50px;
 }
-.check:before {
+
+#nwm {
+    position: relative;
+    right: 57px;
+    width: 50px;
+    pointer-events: none
+}
+
+#nwm::before {
     content: '';
     position: absolute;
     width: 50px;
@@ -19,10 +26,12 @@
     background: grey;
     border-radius: 15px;
 }
-.check:checked::before {
-    background-color: rgb(0, 183, 255);
+
+#lang_toggle:checked~#nwm::before {
+    background: rgb(0, 183, 255);
 }
-.check::after {
+
+#nwm::after {
     content: '';
     left: 0px;
     position: absolute;
@@ -32,7 +41,7 @@
     border-radius: 15px;
     transition: 0.3s;
 }
-.check:checked:after {
+#lang_toggle:checked~#nwm::after {
     left: 25px;
 }
 .container {
@@ -48,9 +57,10 @@
 
 }
 
-.check:checked ~ .content.contentPL{
+#lang_toggle:checked~.content.contentPL {
     display: none;
 }
-.check:checked ~ .content.contentENG {
+
+#lang_toggle:checked~.content.contentENG {
     display: block;
 }
